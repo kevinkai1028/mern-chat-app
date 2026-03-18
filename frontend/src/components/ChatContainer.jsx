@@ -22,7 +22,7 @@ const ChatContainer = () => {
 
         return ()=> unsubscribeFromMessages()
 
-    },[selectedUser.id, getMessages, subscribeToMessages, unsubscribeFromMessages])
+    },[selectedUser._id, getMessages, subscribeToMessages, unsubscribeFromMessages])
 
     useEffect(()=>{
       if(messageEndRef.current && messages){ //mark of the last exsist and message exsist
